@@ -1,0 +1,114 @@
+body {
+      background: #fff;
+      color: #222;
+      font-family: 'Inter', Arial, sans-serif;
+}
+
+.submitbutton {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.profile-pic-wrapper {
+  width: 320px;
+  height: 320px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 4px solid #222;
+  background: #fff;
+  box-sizing: border-box;
+  /* Animation setup: hidden and below */
+  opacity: 0;
+  transform: translateY(80px);
+  transition: opacity 0.7s ease, transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.show-profile-pic {
+  opacity: 1;
+  transform: translateY(0);
+}
+.profile-pic {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+@media (max-width: 992px) {
+  .profile-pic-wrapper {
+    width: 200px;
+    height: 200px;
+  }
+}
+@media (max-width: 576px) {
+  .profile-pic-wrapper {
+    width: 140px;
+    height: 140px;
+  }
+  .hero-title {
+    font-size: 2rem;
+  }
+  .hero-subtitle {
+    font-size: 1.1rem;
+  }
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.7rem;
+    letter-spacing: 1px;
+}
+.hero-title {
+    font-size: clamp(2.5rem, 3vw, 6rem);
+    font-weight: 800;
+    margin-bottom: 0.5em;
+    line-height: 1.05;
+}
+.hero-subtitle {
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 1.5em;
+}
+.hero-description {
+    font-size: 1.3rem;
+    margin-bottom: 2em;
+    max-width: 650px;
+}
+.hero-actions .btn {
+    font-size: 1.1rem;
+    margin-right: 1rem;
+}
+.hero-socials a {
+    font-size: 2rem;
+    margin-right: 1.5rem;
+    color: #222;
+    transition: color 0.2s;
+}
+.hero-socials a:hover {
+    color: #0d6efd;
+}
+
+@media (max-width: 768px) {
+    .hero-title {
+    font-size: 2.5rem;
+    }
+    .hero-subtitle {
+    font-size: 1.4rem;
+    }
+    .navbar-nav {
+    text-align: center;
+    }
+    .container {
+    max-width: 100vw;
+    }
+}

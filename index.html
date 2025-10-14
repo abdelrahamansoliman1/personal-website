@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Abdelrahman Soliman | Front-End Engineer Portfolio</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-md navbar-light bg-white border-bottom py-3">
+        <div class="container">
+            <a class="navbar-brand" href="#">AS</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+                aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="mainNav">
+                <ul class="navbar-nav gap-3">
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    
+
+    <!-- Hero Section -->
+<section class="py-5">
+  <div class="container">
+    <div class="row align-items-center flex-lg-row flex-column-reverse">
+      <!-- Text Content -->
+      <div class="col-lg-7 col-12">
+        <h1 class="hero-title mb-2">Abdelrahman Soliman</h1>
+        <div class="hero-subtitle mb-2">Front-End Engineer</div>
+        <p class="hero-description mb-4">
+          I build accessible, pixel-perfect digital experiences for the web, crafting user interfaces that blend thoughtful design with robust engineering.
+        </p>
+        <div class="hero-actions mb-4 d-flex flex-wrap gap-2">
+          <a href="#projects" class="btn btn-link fw-bold text-primary">View My Work <span>&darr;</span></a>
+          <a href="#contact" class="btn btn-outline-dark fw-bold">Get In Touch <i class="bi bi-envelope ms-1"></i></a>
+        </div>
+        <div class="hero-socials mt-2 d-flex gap-3">
+          <a href="https://github.com/abdelrahamansoliman1" target="_blank" aria-label="GitHub"><i class="bi bi-github"></i></a>
+          <a href="https://www.linkedin.com/in/abdelrahman-soliman" target="_blank" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+          <a href="mailto:abd.soliman06@gmail.com" aria-label="Email"><i class="bi bi-envelope"></i></a>
+        </div>
+      </div>
+       <!-- Profile Picture (Animated Reveal) -->
+        <div class="col-lg-5 col-12 d-flex justify-content-lg-end justify-content-center mb-4 mb-lg-0">
+        <div class="profile-pic-wrapper" id="profilePicWrapper">
+            <img src="images/me.jpg" alt="Abdelrahman Soliman" class="profile-pic img-fluid" />
+        </div>
+        </div>
+    </div>
+  </div>
+</section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-uppercase text-secondary fs-6 mb-3">About</h2>
+            <div class="mb-3" style="height:4px; width:48px; background:#0d6efd; border-radius:2px;"></div>
+            <div class="fs-5 lh-lg text-dark">
+                <p>
+                    I'm a developer passionate about crafting accessible, pixel-perfect user interfaces that blend
+                    thoughtful
+                    design with robust engineering. My favorite work lies at the intersection of design and development,
+                    creating experiences that not only look great but are meticulously built for performance and
+                    usability.
+                </p>
+                <p class="text-muted">
+                    Currently, I'm a <span class="fw-medium text-dark">Front-End Engineer</span> specializing in
+                    building responsive web applications using modern technologies. I contribute to the creation and
+                    maintenance of UI components that power dynamic frontends, ensuring our platforms meet web
+                    accessibility
+                    standards and best practices to deliver an inclusive user experience.
+                </p>
+                <p class="text-muted">
+                    In the past, I've had the opportunity to develop software across a variety of settings — from
+                    <span class="text-dark">startups</span> and
+                    <span class="text-dark">digital agencies</span> to
+                    <span class="text-dark">enterprise corporations</span>. I'm always eager to learn new
+                    technologies and tackle challenging problems that push the boundaries of what's possible on the web.
+                </p>
+                <p class="text-muted">
+                    When I'm not coding, you'll find me exploring new design trends, contributing to open-source
+                    projects, or
+                    sharing knowledge with the developer community through technical writing and mentorship.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-uppercase text-secondary fs-6 mb-3">Contact</h2>
+            <div class="mb-3" style="height:4px; width:48px; background:#0d6efd; border-radius:2px;"></div>
+            <div class="container">
+                <form action="https://formsubmit.co/4a690560cd10631d22b9b65111426fe4" method="POST">
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" class="form-control" name="Name" id="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" name="Email" id="email" placeholder="your email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="phonenumber" class="form-label">phone number</label>
+                        <input type="number" class="form-control" name="Number" id="number" placeholder="your phone number" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea class="form-control" name="Message" id="message" rows="6" placeholder="Your message" required></textarea>
+                    </div>
+                    <button type="submit" class="submitbutton submit btn btn-primary">Send Message</button>
+                </form>
+            </div>
+    </section>
+
+    <!-- Additional sections (Skills, Experience, Projects, Contact) can be added here similarly -->
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- At the end of <body> add: -->
+    <script src="Js/script.js">
+    </script>
+</body>
+
+</html>
